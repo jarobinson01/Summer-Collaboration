@@ -1,0 +1,84 @@
+*Survival Game*
+
+
+Specifications/Details
+    TIME:
+        day time the page is light yellow
+        night time the page is dark blue
+        gradient gradually to switch day/night
+        Day/Night Cycle: 50 turns (0-30 Day, 31-49 Night)
+    PLAYER INFO: 
+        100 Health points
+        50 Hunger points
+        50 Thirst points
+        Player starts with Ax, 2 Bread, 1 Water Bottle, 3 Painkillers in inventory
+    when player is hurting warnings red
+    nightfall zombies are rooming freely
+
+Items:
+    Weapons:
+        Gun Ammo
+        Ax (used for attacking, chopping trees, deals 20-25 damage)
+        Crowbar (deals 30-35 damage)
+        Shotgun (50-75 damage)
+        Pistol (45-55 damage)
+
+    Health:
+        Painkillers (Restores 15 Health Points)
+        First Aid Kit (Restores 45 Health points)
+        Syringe (Restores 30 Health Points)
+        
+    Food:
+        Bread (Restores 5 Hunger Points)
+        Steak (Restores 25 Hunger Points and 10 Health)
+        Fish (Restores 15 Hunger Points)
+        MRE (Restores 30 Hunger and 20 Health)
+        Mystery Meat (restores 20 Hunger Points with 35% chance of dealing 20 damage)
+
+    Drink:
+        Water Bottle (Restores 20 Thirst Points and 10 Health)
+        Soda (Restores 25 Thirst Points)
+        Electrolytes (Restores)
+
+    Etc:
+        Gold Pieces
+
+Locations:
+Warehouse (Home Base)
+Forest (supples and hunting)
+Hospital (healing)
+Store (food,water, and healing supplies)
+House (supplies)
+Auto Store(broken down car)
+Gas Station(car parts and gas)
+Gun Store(weapons)
+
+
+LEVEL ONE
+    Objective: Bar all the windows and doors before nightfall
+    Failure: all doors and windows not bared zombies get in and kill you
+    12 windows and 3 doors
+    each windows need 3 pieces of wood and door 7
+    ax down tree to get wood each tree give 20 pieces of wood.
+    Each trip player can get 12 pieces of wood.
+    To bar window or door take 5 point of Hunger and Thirst 
+
+LEVEL TWO
+    Objective: Three zombies managed to enter your place. Kill all three and rebar the warehouse before night
+    Failure: You lose a random belonging that you own and you lose 3/4th of your health. 
+    You need an axe and 3 swings to kill a zombie. 
+    Each swing has a prabability of missing, being effective, and being fatal. 
+    With each missed swing, you lose a certain portion of your health
+
+LEVEL THREE
+    Objective:
+    Failure:
+
+LEVEL FOUR
+    Objective:
+    Failure:
+
+LEVEL FIVE
+    Objective:
+    Failure:
+    
