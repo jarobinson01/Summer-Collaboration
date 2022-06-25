@@ -29,7 +29,7 @@ Items:
     Health:
         Painkillers (Restores 15 Health Points)
         First Aid Kit (Restores 45 Health points)
-        Syringe (Restores 30 Health Points)
+        Bandages (Restores 30 Health Points)
         
     Food:
         Bread (Restores 5 Hunger Points)
@@ -41,12 +41,13 @@ Items:
     Drink:
         Water Bottle (Restores 20 Thirst Points and 10 Health)
         Soda (Restores 25 Thirst Points)
-        Electrolytes (Restores)
+        Electrolytes (Restores 30 Thirst Points and 15 Health)
 
     Etc:
         Gold Pieces
         Gasoline
         Car Parts
+        Radio
 
 NPCs:
     Zombie (enemies 100 health)
@@ -54,15 +55,19 @@ NPCs:
     Wandering Traveler ()
     Trader
 
+Explore
+Search
+
 Locations:
 Warehouse (Home Base)
 Forest (supples and hunting)
 Hospital (healing)
 Store (food,water, and healing supplies)
-House (supplies)
+House, Apartment, Cabin (supplies)
 Auto Store(broken down car)
 Gas Station(car parts and gas)
 Gun Store(weapons)
+Cave (Enemies, gold, special items)
 
 
 LEVEL ONE
@@ -93,4 +98,11 @@ LEVEL FOUR
 LEVEL FIVE
     Objective:
     Failure:
+    
+
+
+Side Quests:
+    Someone lost some gold and/or items and you once you find it you
+        have the option to return items
+
     
