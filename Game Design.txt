@@ -6,12 +6,14 @@ Specifications/Details
         day time the page is light yellow
         night time the page is dark blue
         gradient gradually to switch day/night
-        Day/Night Cycle: 50 turns (0-30 Day, 31-49 Night)
+        Day/Night Cycle: 50 turns (0-29 Day, 30-49 Night)
     PLAYER INFO: 
         100 Health points
         50 Hunger points
         50 Thirst points
         Player starts with Ax, 2 Bread, 1 Water Bottle, 3 Painkillers in inventory
+        XP Points
+        Days Survived (For every day survived, player gains 20 xp)
     when player is hurting warnings red
     nightfall zombies are rooming freely
 
@@ -22,6 +24,7 @@ Items:
         Crowbar (deals 30-35 damage)
         Shotgun (50-75 damage)
         Pistol (45-55 damage)
+        Grenade (75-100 damage)
 
     Health:
         Painkillers (Restores 15 Health Points)
@@ -42,6 +45,14 @@ Items:
 
     Etc:
         Gold Pieces
+        Gasoline
+        Car Parts
+
+NPCs:
+    Zombie (enemies 100 health)
+    Super Zombie (enemies 200 health)
+    Wandering Traveler ()
+    Trader
 
 Locations:
 Warehouse (Home Base)
@@ -64,7 +75,8 @@ LEVEL ONE
     To bar window or door take 5 point of Hunger and Thirst 
 
 LEVEL TWO
-    Objective: Three zombies managed to enter your place. Kill all three and rebar the warehouse before night
+    Objective: Three zombies managed to enter your place. Kill all 
+               three and rebar the warehouse before night
     Failure: You lose a random belonging that you own and you lose 3/4th of your health. 
     You need an axe and 3 swings to kill a zombie. 
     Each swing has a prabability of missing, being effective, and being fatal. 
