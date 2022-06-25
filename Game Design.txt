@@ -52,7 +52,9 @@ Items:
 NPCs:
     Zombie (enemies 100 health)
     Super Zombie (enemies 200 health)
+    Bandits (enemies 100 health)
     Wandering Traveler ()
+    Wounded Human
     Trader
 
 Explore
@@ -105,4 +107,3 @@ Side Quests:
     Someone lost some gold and/or items and you once you find it you
         have the option to return items
 
-    
