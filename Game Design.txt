@@ -102,7 +102,6 @@ LEVEL FIVE
     Failure:
     
 
-
 Side Quests:
     Someone lost some gold and/or items and you once you find it you
         have the option to return items
