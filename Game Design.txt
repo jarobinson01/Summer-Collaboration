@@ -100,7 +100,7 @@ LEVEL FOUR
 LEVEL FIVE
     Objective:
     Failure:
-    
+
 
 Side Quests:
     Someone lost some gold and/or items and you once you find it you

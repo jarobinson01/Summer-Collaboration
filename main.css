@@ -1,4 +1,53 @@
-#start_button{
-    width: 200px;
-    height: 100px;
+.stats {
+    border: 2px solid blue;
+    margin: 0px;
+    padding: 0px;
+    height: 95vh;
+    width: 25%;
+    position: relative;
+    float: left;
+}
+
+.info {
+    border: 2px solid red;
+    margin: 0px;
+    padding: 0px;
+    height: 95vh;
+    width: 25%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.text {
+    border: 2px solid black;
+    margin: auto;
+    padding: 0px;
+    height: 95vh;
+    width: 45%;
+}
+
+.main {
+    border-collapse: collapse;
+    position: relative;
+}
+
+#inputForm {
+    position: absolute;
+    bottom: 10px;
+}
+
+#actionInput {
+    position: absolute;
+    float: left;
+    display: inline;
+    width: 49%;
+    bottom: 0px;
+}
+
+#submit {
+    float:left;
+    display:inline;
+    width: 49%;
+    bottom: 0px;
 }
