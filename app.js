@@ -13,7 +13,7 @@ let time_cycle = {cycle:50, day:0-29, night:30-49}
 //  for the damage points
 let weapons_items = {ammo:25, ax: 20-25, crowbar:30-35, shotgun:50-75, pistol:45-55, grenade:75-100} 
 // health_items object; the values are the points of health received
-let health_items = {painkillers:15, first_aid:45, bandages:30, steak:10, mre:20, water:10, electrolyte:15}
+let health_items = {painkillers:15, first_aid:45, bandages:30}
 // food_items object; the values are the points of hunger received
 let food_items = {bread:5, steak:25, fish:15, mre:30, mystery_meat:20}
 // drink_items object; the vlaues are the point of thrist received
