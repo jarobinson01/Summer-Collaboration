@@ -1,4 +1,14 @@
 $(document).ready(function(){
+    var div = document.createElement("div");
+    div.style.width = "100px";
+    div.style.height = "100px";
+    div.style.background = "red";
+    div.style.color = "white";
+
+    div.appendChild(document.createTextNode("Hello"));
+
+    document.getElementByClassName("text")[0].appendChild(div);
+    document.getElementByClassName("text")[0].textContent("HELLO");
 });
 
 // player_info object; the values are the point system
@@ -17,3 +27,18 @@ let health_items = {painkillers:15, first_aid:45, bandages:30}
 let food_items = {bread:5, steak:25, fish:15, mre:30, mystery_meat:20}
 // drink_items object; the vlaues are the point of thrist received
 let drink_items = {water:20, soda:25, electrolyte:30}
+
+
+
+var input = document.getElementsByTagName("input")[0],
+    text = document.getElementsByClassName("text");
+
+function update(value) {
+    text.innerHTML = value;
+}
+
+input.oninput = function() {
+    var val = input.value;
+    update(val);
+};
+    
