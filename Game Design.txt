@@ -28,8 +28,8 @@ Items:
 
     Health:
         Painkillers (Restores 15 Health Points)
-        First Aid Kit (Restores 45 Health points)
         Bandages (Restores 30 Health Points)
+        First Aid Kit (Restores 45 Health points)
         
     Food:
         Bread (Restores 5 Hunger Points)

@@ -1,5 +1,4 @@
 $(document).ready(function(){
-    alert("hello, world!")
 });
 
 // player_info object; the values are the point system
