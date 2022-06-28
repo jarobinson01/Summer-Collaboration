@@ -1,15 +1,47 @@
-$(document).ready(function(){
-    var div = document.createElement("div");
-    div.style.width = "100px";
-    div.style.height = "100px";
-    div.style.background = "red";
-    div.style.color = "white";
+$(document).ready(function() {
+    $("#actionInput").focus();
 
-    div.appendChild(document.createTextNode("Hello"));
+    let messages = 0;
+    text = document.getElementsByClassName("text")[0];
+    var input = $("#actionInput");
+    var form = $("#inputForm");
 
-    document.getElementByClassName("text")[0].appendChild(div);
-    document.getElementByClassName("text")[0].textContent("HELLO");
+    form.submit(function(e) {
+        e.preventDefault();
+        updateMessage();
+        $("#actionInput").focus();
+    });
+
+    function updateMessage() {
+        //Echo input text into message box
+        var val = input.val();
+
+        var echoDiv = document.createElement("div");
+        echoDiv.style.color = "rgb(100, 100, 100)";
+        echoDiv.style.paddingTop = "1rem";
+        echoDiv.appendChild(document.createTextNode(val));
+
+        if($.trim(val) != "") {
+            $("#text").append(echoDiv);
+            processInput(val);
+        }
+        
+        //Keep text scrolled to bottom and reset input box
+        var textContainer = document.getElementById("textContainer");
+        textContainer.scrollTop = textContainer.scrollHeight;
+
+        $("#actionInput").val("");
+    }
+
+    function processInput(val) {
+        var message = document.createElement("div");
+        message.style.color = "white";
+        message.appendChild(document.createTextNode("processing"));
+        $("#text").append(message);
+    }
 });
+
+/*
 
 // player_info object; the values are the point system
 let player_info = {health:100, hunger:50, thrist:50}
@@ -26,19 +58,6 @@ let health_items = {painkillers:15, first_aid:45, bandages:30}
 // food_items object; the values are the points of hunger received
 let food_items = {bread:5, steak:25, fish:15, mre:30, mystery_meat:20}
 // drink_items object; the vlaues are the point of thrist received
-let drink_items = {water:20, soda:25, electrolyte:30}
+let drink_items = {water:20, soda:25, electrolyte:30}*/
 
-
-
-var input = document.getElementsByTagName("input")[0],
-    text = document.getElementsByClassName("text");
-
-function update(value) {
-    text.innerHTML = value;
-}
-
-input.oninput = function() {
-    var val = input.value;
-    update(val);
-};
     
