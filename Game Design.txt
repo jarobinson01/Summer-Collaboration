@@ -1,5 +1,7 @@
 *Survival Game*
 
+Use git submodule update --remote --merge in website folder to push 
+    repo to webside
 
 Specifications/Details
     TIME:
