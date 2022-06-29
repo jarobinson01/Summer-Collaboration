@@ -17,6 +17,15 @@ Specifications/Details
     when player is hurting warnings red
     nightfall zombies are rooming freely
 
+Page Organization:
+    3 main panels: stats, game, info
+    Stats:
+        Player information (health, hunger, thirst, equipped items, inventory)
+    Game:
+        Main player interaction.  Contains Input field for commands and message box
+    Info:
+        Game information (day number, time of day, quests/missions)
+
 Items:
     Weapons:
         Gun Ammo

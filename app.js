@@ -59,5 +59,3 @@ let health_items = {painkillers:15, first_aid:45, bandages:30}
 let food_items = {bread:5, steak:25, fish:15, mre:30, mystery_meat:20}
 // drink_items object; the vlaues are the point of thrist received
 let drink_items = {water:20, soda:25, electrolyte:30}*/
-
-    
