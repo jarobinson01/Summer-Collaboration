@@ -31,9 +31,10 @@ Items:
         Gun Ammo
         Ax (used for attacking, chopping trees, deals 20-25 damage)
         Crowbar (deals 30-35 damage)
-        Shotgun (50-75 damage)
-        Pistol (45-55 damage)
-        Grenade (75-100 damage)
+        Sword (deals 40-50 damage)
+        Pistol (50-65 damage)
+        Shotgun (65-80 damage)
+        Grenade (80-100 damage)
 
     Health:
         Painkillers (Restores 15 Health Points)
@@ -66,8 +67,23 @@ NPCs:
     Wounded Human
     Trader
 
-Explore
-Search
+Commands (abbreviation):
+    get (g) - picks up specified item
+    equip (e) - equips specified weapon 
+    use (u) - player will interact with elegible items in inventory
+    eat - player will eat specified food, the 'use' command will function the same as well
+    drink - player will drink specified beverege, the 'use' command will function the same as well
+    look (l) - player will examine surroundings, and the game will notify if there is anything noteworthy
+            (i.e. if there are any objects nearby that the player can pick up)
+    search (s) - player will search inside of specified place
+    explore (x) - player will travel up to 5 miles away from where they are
+    inventory (i) - displays inventory items and amount of gold player has
+    attack (a) - attack specified enemy with whatever weapon the player has equipped
+    info ('?') - displays info about specified item or character
+     ^   ^   ^
+     |   |   |
+    When player issues a command that specifies other items or characters, the game will 
+        check if the specified entity is near player or in inventory
 
 Locations:
 Warehouse (Home Base)
@@ -79,7 +95,6 @@ Auto Store(broken down car)
 Gas Station(car parts and gas)
 Gun Store(weapons)
 Cave (Enemies, gold, special items)
-
 
 LEVEL ONE
     Objective: Bar all the windows and doors before nightfall
@@ -115,3 +130,19 @@ Side Quests:
     Someone lost some gold and/or items and you once you find it you
         have the option to return items
 
+Command/Input Handling:
+    Functions that handle commands will be named *command*Command().  For example, the function that will handle the
+    'attack' command will be named attackCommand() by convention.
+
+    Player will submit a command which will trigger the .submit function.  The .submit function will
+    call updateMessage(), which will subsequently call processInput().  processInput() will handle how the 
+    game will respond when the player submits commands.
+
+    All command handling will be done within processInput(). processInput() will call other functions based upon
+    the command specified by user.  For example, if the user enters the 'attack' command, processInput() will detect that
+    and call the function designated for that command.  If the user inputs a command that is not recognized by the
+    game, processInput() will push an error message that will tell the player that the given command was not recognized.
+
+Functionality to implement:
+    Allow player to reset game with command 'reset'.  Game will ask for comfirmation, and
+    player will need to enter 'RESET' to confirm the request.  All stats set back to default.

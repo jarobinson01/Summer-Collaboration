@@ -1,8 +1,21 @@
+.main {
+    position: relative;
+    box-sizing: border-box;
+    background-color: rgb(48, 48, 48);
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+}
+
+/*********STATS PANE*********/
 #stats {
     /*border: 2px solid blue;*/
     background-color: #232221;
     color: rgb(189, 189, 189);
-    position: absolute;
+    position: relative;
     float: left;
     box-sizing: border-box;
     font-weight: 100;
@@ -13,9 +26,108 @@
 }
 
 #title {
+    /*border: 2px solid aqua;*/
     margin: 0;
+    font-family: Gill Sans, sans-serif;
+    text-align: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #6b6b6b;
 }
 
+#statsRegion {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #484848;
+}
+
+.statsDisplay {
+    /*border: 2px solid rgb(255, 20, 21);*/
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.healthDisplay {
+    width: 100%;
+}
+
+.hungerDisplay {
+    width: 45%;
+}
+
+.thirstDisplay {
+    width: 45%;
+}
+
+.labelRow {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.label {
+    color:#9f9f9f;
+    font-family: Trebuchet MS, sans-serif;
+}
+
+.amount {
+    color: gray;
+    font-family: Arial Narrow, sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.statsBar {
+    background-color: #6b6b6b;
+    width: 100%;
+    height: 5px;
+    border-radius: 4px;
+}
+
+.healthBar {
+    background-color: #ff1717;
+    width: 100%;
+    height: 5px;
+    border-radius: 4px;
+}
+
+.hungerBar {
+    background-color: #dab350;
+    width: 100%;
+    height: 5px;
+    border-radius: 4px;
+}
+
+.thirstBar {
+    background-color: #174dff;
+    width: 100%;
+    height: 5px;
+    border-radius: 4px;
+}
+
+.itemRegion {
+    /*border: 2px solid green;*/
+    padding-top: 1rem;
+    font-family: Noto Sans, sans-serif;
+    font-weight: 500;
+    width: 100%;
+}   
+
+.itemDisplay {
+    /*border: 2px solid green;*/
+    padding-top: .5rem;
+    padding-left: 2rem;
+    font-family: Courier New, monospace;
+    font-weight: lighter;
+}
+
+/*******END STATS PANE*******/
+
+
+/*********INFO PANE**********/
 .info {
     /*border: 2px solid red;*/
     background-color: #232221;
@@ -28,7 +140,10 @@
     right: 0;
     top: 0;
 }
+/*******END INFO PANE********/
 
+
+/*********INFO PANE**********/
 .game {
     /*border: 2px solid purple;*/
     background-color: rgb(18, 20, 21);
@@ -65,23 +180,10 @@
     display: table-cell;
     vertical-align: bottom;
     position: relative;
-    /*bottom: 0;*/
     max-height: 90vh;
     width: 60vw;
     height: 90vh;
     padding: 1.5rem;
-}
-
-.main {
-    position: relative;
-    box-sizing: border-box;
-    background-color: rgb(48, 48, 48);
-    margin: 0px;
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    left: 0px;
-    margin: 0px;
 }
 
 #inputForm {
@@ -132,3 +234,4 @@
     border: 1px solid black;
     background-color: rgb(50, 50, 50);
 }
+/*******END GAME PANE********/

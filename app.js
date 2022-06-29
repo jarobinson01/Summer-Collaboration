@@ -1,17 +1,26 @@
 $(document).ready(function() {
     $("#actionInput").focus();
 
-    let messages = 0;
+    // *list of nearby entities
+    // *list of items in inventory
+    // *gold amount
+    // *equipped item
+    // *dictionary with all items and info about them
+    //      Orgnized key:value --> item:info
+    //      This resource will help: https://flexiple.com/javascript-dictionary/    
+
     text = document.getElementsByClassName("text")[0];
     var input = $("#actionInput");
     var form = $("#inputForm");
 
+    //Calls input handling functions and refocuses input window
     form.submit(function(e) {
         e.preventDefault();
         updateMessage();
         $("#actionInput").focus();
     });
 
+    //Updates message box
     function updateMessage() {
         //Echo input text into message box
         var val = input.val();
@@ -21,9 +30,12 @@ $(document).ready(function() {
         echoDiv.style.paddingTop = "1rem";
         echoDiv.appendChild(document.createTextNode(val));
 
+        //Calls function that will handle responses to input
         if($.trim(val) != "") {
             $("#text").append(echoDiv);
             processInput(val);
+
+            //Command handling functions will be here//
         }
         
         //Keep text scrolled to bottom and reset input box
@@ -33,12 +45,17 @@ $(document).ready(function() {
         $("#actionInput").val("");
     }
 
+    //Handles the responses to player input
     function processInput(val) {
         var message = document.createElement("div");
         message.style.color = "white";
         message.appendChild(document.createTextNode("processing"));
         $("#text").append(message);
     }
+
+    //// -- COMMAND HANDLING FUNCTIONS -- \\\\
+
+    ////\/\/\/\/\/\/\/\/\\/\/\/\/\/\/\/\/\/\\\
 });
 
 /*
