@@ -1,6 +1,8 @@
 *Survival Game*
 
 Use:
+    git push https://github.com/jrobin15283/jrobin15283.github.io.git
+
     git commit -am "*summary*" to commit changes to website
 
     git submodule update --remote --merge in website folder to push 
@@ -74,6 +76,7 @@ NPCs:
     Trader
 
 Commands (abbreviation):
+    help (h) - with no arguments, it will list all commands and their function.  With a command argument, it will return more details about the command
     get (g) - picks up specified item
     equip (e) - equips specified weapon 
     use (u) - player will interact with elegible items in inventory

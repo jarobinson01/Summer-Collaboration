@@ -39,6 +39,11 @@ $(document).ready(function() {
         radio: "An old radio.  This might come in handy..."
     };
 
+    //Command info dictionary
+    var commandInfo = {
+        
+    }
+
     text = document.getElementsByClassName("text")[0];
     var input = $("#actionInput");
     var form = $("#inputForm");
@@ -106,7 +111,7 @@ $(document).ready(function() {
     function infoCommand(object) {
         switch(object) {
             case "":
-                return "To get item info, enter 'item' and then type the item you would like to examine (for example: 'info ax')"
+                return "To get item info, enter 'info' and then type the item you would like to examine (for example: 'info ax')"
             case "ammo":
                 return itemInfo.ammo;
             case "ax":
@@ -162,10 +167,14 @@ $(document).ready(function() {
         }
     }
 
+    function helpCommand(args) {
+
+    }
+
     function getCommand(object) {
 
     }
-    ////\/\/\/\/\/\/\/\/\\/\/\/\/\/\/\/\/\/\\\
+    ////\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\\\\
 });
 
 /*
