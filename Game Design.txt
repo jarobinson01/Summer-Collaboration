@@ -1,6 +1,9 @@
 *Survival Game*
 
-Use git submodule update --remote --merge in website folder to push 
+Use:
+    git commit -am "*summary*" to commit changes to website
+
+    git submodule update --remote --merge in website folder to push 
     repo to webside
 
 Specifications/Details
@@ -31,7 +34,7 @@ Page Organization:
 Items:
     Weapons:
         Gun Ammo
-        Ax (used for attacking, chopping trees, deals 20-25 damage)
+        Axe (used for attacking, chopping trees, deals 20-25 damage)
         Crowbar (deals 30-35 damage)
         Sword (deals 40-50 damage)
         Pistol (50-65 damage)
@@ -41,13 +44,13 @@ Items:
     Health:
         Painkillers (Restores 15 Health Points)
         Bandages (Restores 30 Health Points)
-        First Aid Kit (Restores 45 Health points)
+        Med Kit (Restores 45 Health points)
         
     Food:
-        Bread (Restores 5 Hunger Points)
+        Bread (Restores 10 Hunger Points)
         Steak (Restores 25 Hunger Points and 10 Health)
         Fish (Restores 15 Hunger Points)
-        MRE (Restores 30 Hunger and 20 Health)
+        MRE (Restores 30 Hunger, 20 Thirst, and 20 Health)
         Mystery Meat (restores 20 Hunger Points with 35% chance of dealing 20 damage)
 
     Drink:
@@ -56,9 +59,10 @@ Items:
         Electrolytes (Restores 30 Thirst Points and 15 Health)
 
     Etc:
-        Gold Pieces
+        Gold
         Gasoline
-        Car Parts
+        Lumber
+        Car Parts *needs to be implemented in 'info' command
         Radio
 
 NPCs:

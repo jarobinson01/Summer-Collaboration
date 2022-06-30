@@ -186,6 +186,10 @@
     padding: 1.5rem;
 }
 
+.message {
+    padding-top: .25rem;
+}
+
 #inputForm {
     border-top: 2px solid rgb(71, 71, 71);
     padding: .75rem;
