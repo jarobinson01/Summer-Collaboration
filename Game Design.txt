@@ -1,7 +1,7 @@
 *Survival Game*
 
 Use:
-    git push https://github.com/jrobin15283/jrobin15283.github.io.git
+    git push https://github.com/jarobinson01/jarobinson01.github.io.git
 
     git commit -am "*summary*" to commit changes to website
 
