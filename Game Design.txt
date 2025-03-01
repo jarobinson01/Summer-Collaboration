@@ -39,9 +39,9 @@ Items:
         Axe (used for attacking, chopping trees, deals 20-25 damage)
         Crowbar (deals 30-35 damage)
         Sword (deals 40-50 damage)
-        Pistol (50-65 damage)
+        Pistol (30-40 damage)
         Shotgun (65-80 damage)
-        Grenade (80-100 damage)
+        Grenade (80-120 damage)
 
     Health:
         Painkillers (Restores 15 Health Points)
